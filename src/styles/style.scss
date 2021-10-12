@@ -1,13 +1,14 @@
 @import "fonts";
 @import "normalizer";
 
+
 .b-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 20px 10px 20px;
+  margin: 20px 20px 0px 20px;
   &__title {
-    font-size: 100px;
+    font-size: 80px;
     font-family: "seven";
     color: #0088ff;
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa,
@@ -16,8 +17,8 @@
       0 20px 20px rgba(0, 0, 0, 0.15);
   }
   &__img {
-    margin: 30px;
-    width: 150px;
+    margin: 0 30px;
+    width: 120px;
     box-shadow: rgba(0, 0, 0, 0.712) 0px 7px 29px 0px;
     border-radius: 100px;
   };
@@ -27,6 +28,7 @@
 .b-container-info {
   display: flex;
   justify-content: center;
+  margin: 20px;
 }
 
 .b-container-data {
@@ -35,17 +37,17 @@
   justify-content: center;
   align-items: center;
   font-family: "game";
-  &__time {
+  &__title {
     color: #0088ff;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
     margin: 0 40px 0 0;
-    font-size: 50px;
+    font-size: 30px;
   }
   &__count {
     margin: 0;
     color: #ffffff;
     text-shadow: 2px 2px 7px rgb(0, 0, 0);
-    font-size: 60px;
+    font-size: 45px;
   }
 }
 
@@ -54,19 +56,19 @@
 .b-container-game {
   display: flex;
   justify-content: center;
-  margin: 40px 90px 40px 90px;
+  margin: 20px 90px 20px 90px;
 }
 
 .b-game {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 12in;
-  min-height: 5in;
+  width: 11in;
+  min-height: 4in;
   background-image: url("../assets/images/tierra.jpg");
   background-size: contain;
   background-attachment: initial;
-  border: 6px solid #0088ff;
+  border: 4px solid #0088ff;
   box-sizing: border-box;
   box-shadow: rgb(0, 0, 0) 0px 0px 40px -10px;
   &__row{
@@ -78,8 +80,8 @@
 };
 
 .b-circle{
-  width: 100px;
-  height: 90px;
+  width: 90px;
+  height: 80px;
   margin: 0px 30px;
   border: 6px solid #3b2613;
   border-bottom-width: 0;
@@ -87,24 +89,21 @@
   border-radius: 50%;
   background-color: #331e0d;
   box-shadow: rgba(3, 3, 5, 0.835) 0px 7px 19px, rgba(0, 0, 0, 0.651) 0px 8px 20px, rgba(17, 17, 26, 0.1) 0px 10px 40px;
+  cursor:crosshair;
 };
 
-
-
-.mole{
-  background-color: red;
-}
 
 /*------------- Button -------------- */
 .b-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px 0 0 0;
+  margin-top: 30px;
   &__btn {
-    font-size: 35px;
+    font-size: 30px;
     font-family: "game";
     color: #0088ff;
+    cursor: pointer;
     text-shadow: 2px 2px 7px rgb(0, 0, 0);
     box-shadow: 0 0 30px 30px #212327 inset;
     border-radius: 60px;
@@ -118,4 +117,11 @@
   }
 }
 
+
+/*------------- Game character  -------------- */
+.mole{
+  background-image: url('../assets/images/mole.png');
+  background-size:contain;
+  background-repeat: no-repeat;
+}
 

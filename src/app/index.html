@@ -20,12 +20,16 @@
     <!-- Data score and timer -->
     <div class="b-container-info">
         <div class='b-container-data'>
-            <h2 class='b-container-data__time'>timer:</h2>
+            <h2 class='b-container-data__title'>timer:</h2>
             <h2 class='b-container-data__count' id="countdown">60</h2>
         </div>
         <div class="b-container-data">
-            <h2 class='b-container-data__time'>score:</h2>
+            <h2 class='b-container-data__title'>score:</h2>
             <h2 class='b-container-data__count' id="score">0</h2>
+        </div>
+        <div class="b-container-data">
+            <h2 class='b-container-data__title'>hits:</h2>
+            <h2 class='b-container-data__count' id="hits">0</h2>
         </div>
     </div>
     <!-- Game -->
@@ -40,12 +44,12 @@
             </div>
             <div class="b-game__row">
                 <div class="b-circle" id="6"></div>
-                <div class="b-circle" id="7"></div>
+                <div class="b-circle mole" id="7"></div>
                 <div class="b-circle" id="8"></div>
                 <div class="b-circle" id="9"></div>
             </div>
             <div class="b-game__row">
-                <div class="b-circle mole" id="10"></div>
+                <div class="b-circle" id="10"></div>
                 <div class="b-circle" id="11"></div>
                 <div class="b-circle" id="12"></div>
                 <div class="b-circle" id="13"></div>
@@ -55,8 +59,8 @@
     </div>
     <!-- Button -->
     <div class="b-button">
-        <div class="b-button__btn">Start</div>
-        <div class="b-button__btn">restart</div>
+        <div class="b-button__btn" id="start">Start</div>
+        <div class="b-button__btn" id="restart">restart</div>
     </div>
 </body>
 

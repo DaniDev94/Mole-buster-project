@@ -49,7 +49,7 @@ main {
    */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
 
 /* Grouping content
@@ -366,19 +366,19 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 20px 20px 10px 20px;
+  margin: 20px 20px 0px 20px;
 }
 
 .b-header__title {
-  font-size: 100px;
+  font-size: 80px;
   font-family: "seven";
   color: #0088ff;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
 .b-header__img {
-  margin: 30px;
-  width: 150px;
+  margin: 0 30px;
+  width: 120px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.712) 0px 7px 29px 0px;
           box-shadow: rgba(0, 0, 0, 0.712) 0px 7px 29px 0px;
   border-radius: 100px;
@@ -392,6 +392,7 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 20px;
 }
 
 .b-container-data {
@@ -408,18 +409,18 @@ template {
   font-family: "game";
 }
 
-.b-container-data__time {
+.b-container-data__title {
   color: #0088ff;
   text-shadow: 2px 2px 4px black;
   margin: 0 40px 0 0;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .b-container-data__count {
   margin: 0;
   color: #ffffff;
   text-shadow: 2px 2px 7px black;
-  font-size: 60px;
+  font-size: 45px;
 }
 
 /*------------- Game -------------- */
@@ -430,7 +431,7 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 40px 90px 40px 90px;
+  margin: 20px 90px 20px 90px;
 }
 
 .b-game {
@@ -444,12 +445,12 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 12in;
-  min-height: 5in;
+  width: 11in;
+  min-height: 4in;
   background-image: url("../assets/images/tierra.jpg");
   background-size: contain;
   background-attachment: initial;
-  border: 6px solid #0088ff;
+  border: 4px solid #0088ff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: black 0px 0px 40px -10px;
@@ -470,8 +471,8 @@ template {
 }
 
 .b-circle {
-  width: 100px;
-  height: 90px;
+  width: 90px;
+  height: 80px;
   margin: 0px 30px;
   border: 6px solid #3b2613;
   border-bottom-width: 0;
@@ -481,10 +482,7 @@ template {
   background-color: #331e0d;
   -webkit-box-shadow: rgba(3, 3, 5, 0.835) 0px 7px 19px, rgba(0, 0, 0, 0.651) 0px 8px 20px, rgba(17, 17, 26, 0.1) 0px 10px 40px;
           box-shadow: rgba(3, 3, 5, 0.835) 0px 7px 19px, rgba(0, 0, 0, 0.651) 0px 8px 20px, rgba(17, 17, 26, 0.1) 0px 10px 40px;
-}
-
-.mole {
-  background-color: red;
+  cursor: crosshair;
 }
 
 /*------------- Button -------------- */
@@ -498,13 +496,14 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 50px 0 0 0;
+  margin-top: 30px;
 }
 
 .b-button__btn {
-  font-size: 35px;
+  font-size: 30px;
   font-family: "game";
   color: #0088ff;
+  cursor: pointer;
   text-shadow: 2px 2px 7px black;
   -webkit-box-shadow: 0 0 30px 30px #212327 inset;
           box-shadow: 0 0 30px 30px #212327 inset;
@@ -521,5 +520,12 @@ template {
   -webkit-box-shadow: 0 0 12px 0 #646464 inset, 0 0 12px 4px #797979;
           box-shadow: 0 0 12px 0 #646464 inset, 0 0 12px 4px #797979;
   color: #ffff;
+}
+
+/*------------- Game character  -------------- */
+.mole {
+  background-image: url("../assets/images/mole.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=style.css.map */
