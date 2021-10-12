@@ -1,0 +1,121 @@
+@import "fonts";
+@import "normalizer";
+
+.b-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 20px 10px 20px;
+  &__title {
+    font-size: 100px;
+    font-family: "seven";
+    color: #0088ff;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa,
+      0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+      0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+      0 20px 20px rgba(0, 0, 0, 0.15);
+  }
+  &__img {
+    margin: 30px;
+    width: 150px;
+    box-shadow: rgba(0, 0, 0, 0.712) 0px 7px 29px 0px;
+    border-radius: 100px;
+  };
+};
+
+/*------------- Data score and timer -------------- */
+.b-container-info {
+  display: flex;
+  justify-content: center;
+}
+
+.b-container-data {
+  margin: 10px 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "game";
+  &__time {
+    color: #0088ff;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    margin: 0 40px 0 0;
+    font-size: 50px;
+  }
+  &__count {
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 2px 2px 7px rgb(0, 0, 0);
+    font-size: 60px;
+  }
+}
+
+
+/*------------- Game -------------- */
+.b-container-game {
+  display: flex;
+  justify-content: center;
+  margin: 40px 90px 40px 90px;
+}
+
+.b-game {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 12in;
+  min-height: 5in;
+  background-image: url("../assets/images/tierra.jpg");
+  background-size: contain;
+  background-attachment: initial;
+  border: 6px solid #0088ff;
+  box-sizing: border-box;
+  box-shadow: rgb(0, 0, 0) 0px 0px 40px -10px;
+  &__row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 20px;
+  };
+};
+
+.b-circle{
+  width: 100px;
+  height: 90px;
+  margin: 0px 30px;
+  border: 6px solid #3b2613;
+  border-bottom-width: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #331e0d;
+  box-shadow: rgba(3, 3, 5, 0.835) 0px 7px 19px, rgba(0, 0, 0, 0.651) 0px 8px 20px, rgba(17, 17, 26, 0.1) 0px 10px 40px;
+};
+
+
+
+.mole{
+  background-color: red;
+}
+
+/*------------- Button -------------- */
+.b-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
+  &__btn {
+    font-size: 35px;
+    font-family: "game";
+    color: #0088ff;
+    text-shadow: 2px 2px 7px rgb(0, 0, 0);
+    box-shadow: 0 0 30px 30px #212327 inset;
+    border-radius: 60px;
+    padding: 15px;
+    margin: 0 30px;
+    transition: box-shadow 0.4s ease-in-out;
+    &:hover {
+      box-shadow: 0 0 12px 0 #646464 inset, 0 0 12px 4px #797979;
+      color: #ffff;
+    }
+  }
+}
+
+

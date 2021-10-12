@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
-    <script src="../environments/index.js"></script>
-    <title>D</title>
+    <script src="../environments/app.js" defer></script>
+    <link rel="icon" href="../assets/icons/logo-favicon.ico">
+    <title>MoleBuster</title>
 </head>
+
 <body>
-    
+    <header class="b-header">
+        <h1 class="b-header__title">moles</h1>
+        <img class='b-header__img' src="../assets/images/logo-mb.png" alt="logo-molebuster">
+        <h1 class="b-header__title">buster</h1>
+    </header>
+    <!-- Data score and timer -->
+    <div class="b-container-info">
+        <div class='b-container-data'>
+            <h2 class='b-container-data__time'>timer:</h2>
+            <h2 class='b-container-data__count' id="countdown">60</h2>
+        </div>
+        <div class="b-container-data">
+            <h2 class='b-container-data__time'>score:</h2>
+            <h2 class='b-container-data__count' id="score">0</h2>
+        </div>
+    </div>
+    <!-- Game -->
+    <div class="b-container-game">
+        <div class="b-game">
+            <div class="b-game__row">
+                <div class="b-circle" id=1></div>
+                <div class="b-circle" id=2></div>
+                <div class="b-circle" id=3></div>
+                <div class="b-circle" id=4></div>
+                <div class="b-circle" id=5></div>
+            </div>
+            <div class="b-game__row">
+                <div class="b-circle" id="6"></div>
+                <div class="b-circle" id="7"></div>
+                <div class="b-circle" id="8"></div>
+                <div class="b-circle" id="9"></div>
+            </div>
+            <div class="b-game__row">
+                <div class="b-circle mole" id="10"></div>
+                <div class="b-circle" id="11"></div>
+                <div class="b-circle" id="12"></div>
+                <div class="b-circle" id="13"></div>
+                <div class="b-circle" id="14"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Button -->
+    <div class="b-button">
+        <div class="b-button__btn">Start</div>
+        <div class="b-button__btn">restart</div>
+    </div>
 </body>
+
 </html>
